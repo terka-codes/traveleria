@@ -1,7 +1,7 @@
 import "./App.css"
 import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
-import Main from "./components/Main"
+import Home from "./components/Home"
 import Footer from "./components/Footer"
 import DetailsPage from "./components/details/DetailsPage"
 import TropicalLocations from "./components/TropicalLocations"
@@ -13,7 +13,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Main />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/details/" element={<DetailsPage />} />
         <Route path="/tropical-locations/" element={<TropicalLocations />} />
         <Route path="/winter-locations/" element={<WinterLocations />} />
